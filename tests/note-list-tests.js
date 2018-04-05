@@ -1,19 +1,18 @@
-function testNoteListIsInstantiatedWithEmptyArray() {
-  var noteList = new NoteList();
-  expect.toBeEmptyArray(noteList.list)
+
+function testNoteList() {
+  var notelist = new NoteList();
+  var note1 = new Note('I am the 1st note');
+  var note2 = new Note('I am the 2nd note');
+  console.log(notelist.content);
+  document.write('NL is initialized wih an empty array', expect(notelist.content).toBeEmpty());
+
+  notelist.adds(note1);
+  console.log(notelist.content);
+  document.write('NL can add notes to its array', expect(notelist.content).toNotToBeEmpty());
+
+  notelist.adds(note2);
+  console.log(notelist.content);
+  document.write('NL can show all the notes on its array', expect(notelist.show()[1]).toEqual(note2));
 };
 
-function testAddNoteCanAddNewNoteToList() {
-  var noteList = new NoteList();
-  noteList.addNote("I am a new note")
-  expect.toEqual(noteList.list[0].getText() === "I am a new note")
-};
-
-function testThatShowAllNotesReturnsAllNotesStoredInList() {
-  var noteList = new NoteList();
-  noteList.addNote("Note Number 1")
-  noteList.addNote("Note Number 2")
-};
-
-testNoteListIsInstantiatedWithEmptyArray();
-testAddNoteCanAddNewNoteToList();
+testNoteList();
