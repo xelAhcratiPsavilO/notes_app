@@ -11,3 +11,7 @@ Steps:
 4.- To TDD a note list object.
 
 5.- To TDD a note list view object.
+
+6.- Create a minimal HTML page.
+
+7.- Serve a static website.
