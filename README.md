@@ -1,4 +1,4 @@
-Write a frontend, single page app using only pure JavaScript
+Write a frontend, single page app using only pure JavaScript.
 
 Steps:
 
@@ -15,3 +15,5 @@ Steps:
 6.- Create a minimal HTML page.
 
 7.- Serve a static website.
+
+8.- Create a note controller. 
