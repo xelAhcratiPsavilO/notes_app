@@ -12,6 +12,9 @@
       },
       toNotToBeEmpty: function() {
         return (argument1 instanceof Array) && (argument1[0] !== null);
+      },
+      toBe: function(argument2) {
+        return (argument1 instanceof argument2);
       }
     };
   };
